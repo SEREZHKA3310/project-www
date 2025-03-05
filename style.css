@@ -1,0 +1,2052 @@
+@font-face {
+  font-family: "Neue Machina";
+  src: url('fonts/NeueMachina-Regular.otf') format('otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url('fonts/NeueMachina-Medium.ttf') format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url('fonts/NeueMachina-Bold.ttf') format('ttf');
+  font-weight: 700;
+}
+
+
+:root {
+  --border-radius: 15px;
+  --transtion: all 0.4s linear;
+  --dark-main: rgba(23,22,30,1.0);
+  --green-30: rgba(227,254,15,0.3);
+  --main-green: rgba(227, 254, 15, 1);
+  --green-20: rgba(227,254,15,0.2);
+  --white-05: rgba(255,255,255,0.05);
+  --white-color: rgba(255,255,255,1.00);
+  --gray-color: rgba(131,131,131,1);
+  --green-50: rgba(227,254,15,0.5);
+  --white-70: rgba(255,255,255,0.7);
+  --green-10: rgba(227,254,15,0.1);
+  --white-30: rgba(255,255,255,0.3);
+  --transtion: all 0.2s linear;
+}
+
+body {
+  background-color: var(--dark-main);
+  color: #FFF;
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "Neue Machina", 'IBM Plex Mono', 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+}
+
+.header__container {
+  width: calc(100vw - 2 * clamp(15px, 4.6875vw, 50px));
+  box-sizing: content-box;
+}
+
+.computing__container,
+.choose__container,
+.roadmap__container,
+.tokenomics__container,
+.start__container,
+.stop__container,
+.form__container,
+.questions__container,
+.footer__container {
+  width: calc(100vw - 2 * clamp(15px, 4.6875vw, 40px));
+  box-sizing: content-box;
+}
+.title__medium {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+  line-height: 120%;
+}
+.title__small {
+  font-size: 2rem;
+  line-height: 120%;
+}
+  
+.text__large {
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+.text__regular {
+  font-size: 1.2rem;
+  line-height: 140%;
+}
+.text__small {
+  font-size: 1.2rem;
+  line-height: 140%;
+}
+
+.main__choose,
+.main__roadmap,
+.main__tokenomics,
+.tokenomics__container,
+.main__start,
+.main__stop,
+.main__form,
+.main__questions,
+.footer {
+  margin-top: 80px;
+}
+
+
+.header {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.header__container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  min-width: 290px;
+}
+
+.header__element1 {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: -272px; 
+  left: 0%;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px ;
+  border-style: solid;
+  border-color: var(--green-20);
+  border-radius: var(--border-radius) ; 
+}
+
+.header__nav-hidden {
+  visibility: hidden;
+}
+
+.header__logo {
+  visibility: visible;
+  width: 109px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.header__list {
+  display: none;                                          /* Был флекс*/
+  color: var(--white-70);
+}
+
+.header__item {
+  cursor: pointer;
+  transition: var(--transtion);
+  text-wrap: nowrap;
+}
+
+.header__item:hover {
+  color: var(--white-color);
+}
+
+.header__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 22px;
+}
+
+.header__button {
+  width: 91px;
+  height: 30px;
+  font-size: 1.2rem;
+  color: var(--main-green);
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--main-green);
+  cursor: pointer;
+  transition: var(--transtion);
+}
+
+.header__button:hover {
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  transition: var(--transtion);
+  box-shadow: 0 4px 25px var(--green-50);
+}
+
+.header__button:active {
+  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.2);
+  transition: var(--transtion);
+}
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  display: flex;
+}
+
+.header__el {
+  background-color: var(--white-color);
+  width: 23px;
+  height: 1px;
+}
+
+.main__computing {
+  margin-top: 75px;
+  position: relative;
+}
+
+.computing__element2 {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: 0%;
+  right: 0%;
+  z-index: -1;
+}
+
+.computing__element3 {
+  position: absolute;
+  width: 900px;
+  height: auto;
+  top: 55%;
+  left: 0%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.computing__container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.computing__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.computing__title {
+  max-width: clamp(290px, 90.625vw, 405px);
+  font-size: clamp(3.1rem,  9.6875vw, 4.2rem);
+  display: inline-block;
+  text-align: justify;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.computing__circle {
+  position: relative;
+}
+
+.computing__circle::after {
+  content: '';
+  display: inline-block;
+  background-image: url('image/circle.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  width: clamp(42px, 13.125vw, 67px);
+  height: clamp(42px, 13.125vw, 67px);
+  left: clamp(251px, 78.4375vw, 340px);
+  bottom: clamp(2px, 0.625vw, 0px);
+}
+
+.computing__color {
+  color: var(--main-green);
+  position: relative;
+}
+
+.computing__color::after {
+  content: '';
+  background-image: url('elements/pattern.png');
+  display: inline-block;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+}
+
+.computing__description {
+  max-width: 490px ;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  margin-top: clamp(40px, 4.1667vw, 50px);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.computing__buttons {
+  display: flex;
+  column-gap: clamp(10px, 3.125vw, 15px);
+  margin-top: 20px;
+}
+
+.computing__button {
+  font-weight: 400;
+  width: clamp(140px, 43.75vw, 148px);
+  height: clamp(38px,  9.375vw, 50px);
+  padding-inline: 1rem;
+  border-radius: 10px;
+  border-width: 1px;  
+  white-space: nowrap;
+  cursor: pointer;
+}
+.computing__arrow {
+  width: 10px;
+  height: 10px;
+  height: auto;
+}
+.computing__dollar {
+  width: 8px;
+  height: 18px;
+}
+
+.computing__button_color {
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transtion);
+}
+
+.computing__button_color:hover {
+  box-shadow: 0 4px 25px var(--green-50);
+}
+
+.computing__button_color:active {
+  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.computing__button_transparent {
+  color: #FFF;
+  background: transparent;
+  border: 1px solid var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transtion);
+}
+
+.computing__button_transparent:hover {
+  color: var(--dark-main);
+  background: var(--main-green);
+  border-color: var(--main-green);
+  box-shadow: 0 4px 25px var(--green-50);
+}
+
+.computing__button_transparent:active {
+  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.computing__stats {
+  display: flex;
+  text-wrap: nowrap;
+  bottom: auto;
+  margin-top: 40px;
+  column-gap: 13px;
+  align-self: flex-start;
+}
+
+.computing__avg {
+  row-gap: 5px;
+}
+
+.computing__avg {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.computing__subtitle {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.computing__text{
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  color: var(--gray-color);
+  font-size: 1.2rem;
+}
+
+.computing__image {
+  width: 255px;
+  height: 200px;
+  display: none;
+}
+
+
+.choose__container {
+  width: calc(100vw - 2* clamp(15px, 4.6875vw, 40px));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.choose__title {
+  align-self: start;
+}
+.choose__table {
+  display: grid;
+  gap: 10px;
+  
+}
+
+.choose__body {
+  border: 1px solid var(--white-color);
+  border-radius: var(--border-radius);
+  background-color: var(--dark-main);
+  padding: 20px 20px 0;
+  width: clamp(290px, 90.625vw, 420px); 
+  min-height: 200px;
+}
+
+.choose__body-color {
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  border-color: var(--main-green);
+}
+
+.choose__body-hidden {
+  display: none;
+}
+
+.choose__headline {
+  margin-bottom: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.choose__image {
+  width: 36px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.choose__subtitle {
+  color: var(--white-color);
+}
+.choose__subtitle-color {
+  color: var(--dark-main);
+}
+.choose__text {
+  font-family: "IBM Plex Mono";
+  max-width: 100%;
+  font-size: clamp(1.2rem, 0.9375vw, 1.8rem)
+}
+
+
+
+.choose__info {
+  margin-top: 30px;
+  align-self: flex-start;
+}
+
+.choose__arrow {
+  width: 12px;
+  height: 7px;
+  margin-left: 8px;
+}
+
+
+.roadmap__container {
+  margin: 0 auto;
+}
+
+.roadmap__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.roadmap__body {
+  display: flex;
+  max-width: 289px;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.roadmap__image {
+  width: 20px;
+  object-fit: contain;
+  box-sizing: content-box;
+  padding-top: 6px;
+}
+
+.roadmap__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: 12px;
+}
+
+.roadmap__text {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+}
+
+.roadmap__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.roadmap__circle {
+  color: var(--dark-main);
+  background-color: var(--white-color);
+  width: clamp(50px, 15.625vw, 60px);
+  height: clamp(50px, 15.625vw, 60px);
+  font-size: clamp(2rem, 6.25vw, 2.2rem);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roadmap__circle-color {
+  color: var(--dark-main);
+  background-color: var(--main-green);
+}
+
+.roadmap__circle-gray {
+  color: var(--gray-color);
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+.roadmap__item-color {
+  color: var(--main-green);
+}
+
+.roadmap__item-gray {
+  color: var(--gray-color);
+}
+
+.main__tokenomics {
+  position: relative;
+}
+
+.tokenomics__element4{
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: -16%;
+  right: 0;
+  z-index: -1;
+}
+
+.tokenomics__element5 {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.tokenomics__element6 {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: 37%;
+  right: 0%;
+  z-index: -1;
+}
+
+.tokenomics__text {
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  width: 165.625vw;
+  height: 32px;
+  line-height: 140%;
+  text-wrap: nowrap;
+  margin-block: 80px;
+  margin-inline: -100px;
+  transform: rotate(-5deg);
+  display: flex;
+  align-items: center;
+}
+
+.tokenomics__text-another {
+  transform: rotate(2deg);
+}
+
+.tokenomics__container {
+  max-width: 1035px;  
+  margin: 0 auto;
+}
+
+.tokenomics__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tokenomics__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.tokenomics__item {
+  width: 100%;
+  height: 62px;
+  padding-left: 20px;
+  background: transparent;
+  border: 1px solid var(--white-color);
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.tokenomics__item-inner {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  width: clamp(140px, 43.75vw, 262px);
+  height: 100%;
+  padding-right: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--main-green);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tokenomics__item-wide {
+  width: 100%;
+}
+.tokenomics__item-inner_wide {
+  width: 138px;
+}
+
+.tokenomics__copy {
+  cursor: pointer;
+}
+.tokenomics__code {
+  max-width: calc(100% - 138px);
+  height: 22px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tokenomics__code-inner {
+  display: inline;
+}
+
+.main__start {
+  position: relative;
+}
+
+.start__element7 {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: -81%;
+  left: 0%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.start__container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.start__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.start__title {
+  order: 1;
+  margin-bottom: 10px;
+}
+
+.start__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.start__paragraph {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+}
+
+.start__button {
+  width: 247px;
+  height: clamp(42px, 13.125vw,65px);
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: var(--transtion);
+}
+
+.start__button:hover {
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  box-shadow: 0 4px 25px var(--green-50);
+}
+
+.start__button:active {
+  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.start__gradient {
+  width: clamp(290px, 90.625vw, 448px);
+  height: clamp(160px, 50vw, 257px);
+  background: linear-gradient(90deg, rgb(38, 37, 42), rgba(56,59,38,1) 70%, rgba(61,64,39,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+
+.start__image {
+  width: clamp(145px, 45.3125vw, 230px);
+  height: clamp(127px, 39.6875vw, 200px);
+  transform: rotate(-45deg);
+}
+
+.main__stop {
+  position: relative;
+}
+
+.stop__element8 {
+  position: absolute;
+  width: 600px;
+  height: auto;
+  top: -84%;
+  right: 0%;
+  z-index: -1;
+}
+
+.stop__container {
+  margin: 0 auto;
+}
+
+.stop__title {
+  margin-bottom: 0;
+}
+
+.stop__title-green {
+  color: var(--main-green)
+}
+
+.main__form {
+  position: relative;
+}
+
+.form__element9 {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.form__element10 {
+  position: absolute;
+  width: 800px;
+  height: auto;
+  top: 20%;
+  right: 0%;
+  z-index: -1;
+}
+
+.form__container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  width: 100%;
+  height: 48px;
+  padding-inline: 20px;
+  color: var(--white-color);
+  background-color: var(--dark-main);
+  border: 1px solid var(--white-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transtion);
+}
+
+.form__input {
+  font-family: "IBM Plex Mono";
+  color: var(--white-color);
+}
+
+.form__input:hover {
+  background-color: var(--green-20);
+  transition: var(--transtion);
+}
+
+.form__input:hover::placeholder {
+  background-color: var(--green-20);
+  transition: var(--transtion);
+}
+
+.form__input:active {
+  background-color: var(--gray-color);
+  color: var(--dark-main);
+  transition: var(--transtion);
+}
+
+.form__input:active::placeholder {
+  background-color: var(--gray-color);
+  color: var(--dark-main);
+  transition: var(--transtion);
+}
+
+.form__input{
+  margin-bottom: 15px;
+}
+
+.form__input-big {
+  height: 125px;
+  resize: none;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.form__button {
+  width: 100%;
+  height: 62px;
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transtion);
+}
+
+.button__inner {
+  position: absolute;
+  transition: transform 0.1s linear, opacity 0.1s linear;
+}
+
+.form__button:hover .button__inner {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.form__button:hover {
+  box-shadow: 0 4px 25px var(--green-50);
+}
+
+.form__button:active {
+  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form__text {
+  color: var(--gray-color);
+  font-family: 'IBM Plex Mono';
+}
+
+.main__questions {
+  position: relative;
+}
+
+.questions__container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.questions__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+}
+
+
+.questions__title {
+  margin-bottom: 0;
+}
+
+.questions__text {
+  display: none;
+  font-family: 'IBM Plex Mono';
+}
+
+.questions__button {
+  width: 246px;
+  height: clamp(4.2rem, 13.125vw, 6.5rem);
+  color: var(--white-color);
+  background-color: var(--dark-main);
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  padding-inline: clamp(1rem, 3.125vw, 2rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transtion);
+  order: 3;
+}
+
+.questions__button:hover {
+  color: var(--dark-main);
+  background-color: var(--main-green);
+  box-shadow: 0 4px 25px var(--green-50);
+  border: var(--main-green);
+}
+
+.questions__button:active {
+  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.questions__item {
+  width: clamp(290px, 90.625vw, 540px);
+  height: 65px; 
+  padding-inline: 30px;
+  border: 1px solid var(--white-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  column-gap: 9px;
+  align-items: center;
+  text-wrap: wrap;
+}
+.questions__inner {
+  font-size: clamp(1.2rem, 3.75vw, 1.8rem);
+}
+.questions__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.questions__element {
+  width: 20px;
+  height: 10px;
+  object-fit: cover;
+}
+.questions__icon {
+  width: 20px;
+  height: 16px;
+}
+
+.footer {
+  border-top: 1px solid var(--gray-color);
+  position: relative;
+}
+
+.footer__element11 {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+.footer__element12 {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: 20%;
+  right: 0%;
+  z-index: -1;
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding: 44px 0 37px ;
+  color: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 25px;
+}
+
+.footer__copyright {
+  font-family: 'IBM Plex Mono';
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__image {
+  cursor: pointer;
+  width: 138px;
+  height: 22px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__item {
+  font-family: 'IBM Plex Mono';
+  display: inline-block;
+  color: var(--white-70);
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transtion);
+}
+
+.footer__copyright {
+  flex-direction: column-reverse;
+  align-items: center;
+  row-gap: 33px;
+}
+
+.footer__law {
+  font-size: 1.2rem;
+}
+
+.footer__item:hover {
+  color: var(--white-color);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  transition: var(--transtion);
+}
+
+.footer__image:hover { 
+  filter: drop-shadow(0px 0px 7px var(--main-green));
+}
+
+
+@media (min-width: 620px) {
+  .header__container {
+    width: calc(100vw - 2 * clamp(50px, 8.06vw, 100px));
+  }
+  
+  .computing__container,
+  .choose__container,
+  .roadmap__container,
+  .tokenomics__container,
+  .start__container,
+  .stop__container,
+  .form__container,
+  .questions__container,
+  .footer__container {
+    width: calc(100vw - 2 * clamp(40px, 6.451vw, 100px));
+  }
+  .title__medium {
+    font-size: 3.4rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  .title__small {
+    font-size: 2.2rem;
+  }
+    
+  .text__large {
+    font-size: 1.8rem;
+  }
+  .text__regular {
+    font-size: 1.4rem;
+  }
+  .text__small {
+    font-size: 1.2rem;
+  }
+  
+  .main__choose,
+  .main__roadmap,
+  .main__tokenomics,
+  .tokenomics__container,
+  .main__start,
+  .main__stop,
+  .main__form,
+  .main__questions,
+  .footer {
+    margin-top: 100px;
+  }
+
+  .header {
+    margin-top: 30px;
+  }
+  .header__button {
+    width: clamp(91px, 14.67vw, 145px);
+    height: clamp(30px, 4.83vw, 45px);
+    font-size: clamp(1.2rem, 1.93vw, 1.8rem);
+  }
+
+  .main__computing {
+    margin-top: 40px;
+  }
+  .computing__circle::after {
+    width: 67px;
+    height: 67px;
+    right: -78px;
+    bottom: 0;
+  }
+  .computing__description {
+    max-width: clamp(405px, calc(550px - 9.67vw), 490px); /* ширина уменьшается по увеличению ширины экрана*/
+  }
+  .computing__stats {
+    align-self: center;
+    column-gap: 40px;
+  }
+  .computing__avg {
+    row-gap: 1px;
+  }
+  .computing__subtitle {
+    font-size: 1.8rem;
+  }
+  .computing__text {
+    font-size: 1.4rem;
+  }
+  .computing__buttons {
+    margin-top: 30px;
+  }
+
+  .choose__container {
+    align-items: center;
+  }
+  .choose__table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 680px;
+    max-height: 800px;
+    gap: 10px;
+  }
+  .choose__body-hidden {
+    display: block;
+  }
+  .choose__body {
+    width: calc(50% - 5px);
+    height: clamp(220px, calc(300px - 6.451vw), 260px); /* высота уменьшается по увеличению ширины экрана*/
+    padding-bottom: 5px;
+  }
+  .choose__headline {
+    margin-bottom: 14px;
+  }
+  .choose__image {
+    width: 22px;
+    height: 30px;
+  }
+  .choose__text {
+    max-width: clamp(202px, 32.58vw, 335px);
+  }
+  .choose__info {
+    display: none;
+  }
+
+  .roadmap__items {
+    justify-content: space-between;
+    gap: clamp(3rem, 4.83vw, 3rem);
+  }
+  .roadmap__body {
+    max-width: clamp(167px, calc(420px - 25vw), 255px);
+    row-gap: 30px;
+  }
+  .roadmap__item {
+    column-gap: 8px;
+  }
+  .roadmap__circle {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.2rem;
+  }
+  .roadmap__image {
+    width: 10px;
+    height: auto;
+    padding-top: 4px;
+  }
+
+  .tokenomics__text {
+    width: 119vw;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-block: 100px;
+    height: 53px;
+  }
+  .tokenomics__info {
+    gap: 10px;
+  }
+  .tokenomics__item {
+    height: 53px;
+  }
+  .tokenomics__item-wide {
+    width: 100%;
+    height: 78px;
+  }
+  .tokenomics__item-inner {
+    width: 262px;
+  }
+  .tokenomics__item-inner_wide {
+    width: 128px;
+  }
+  .tokenomics__code {
+    max-width: clamp(360px, 59.064vw, 475px);
+    height: auto;
+    overflow: visible;
+    text-wrap: wrap;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
+  }
+  .tokenomics__code-inner {
+    display: block;
+  }
+
+  .start__container {
+    row-gap: 30px;
+  }
+
+  .start__wrapper {
+    row-gap: 40px;
+  }
+  .start__gradient {
+    width: 448px;
+    height: 257px;
+  }
+  .start__image {
+    width: 230px;
+    height: 200px;
+  }
+  .start__paragraph {
+    max-width: 520px;
+    white-space: wrap;
+  }
+  .start__button {
+    border-radius: var(--border-radius);
+  }
+  
+  .form__label {
+    margin-bottom: 20px;
+  }
+  .form__input,
+  .form__button {
+    margin-bottom: 30px;
+  }
+
+  .form__input {
+    height: 50px;
+    padding-inline: 30px;
+  }
+  .form__input-big {
+    height: 110px;
+  }
+  .form__button {
+    height: 53px;
+  }
+
+  .questions__container {
+    row-gap: 40px;
+  }
+  .quesstions__wrapper {
+    row-gap: 30px;
+  }
+  .questions__title {
+    margin-bottom: 0;
+  }
+  .questions__item {
+    height: 53px;
+  }
+  .questions__button {
+    border-radius: var(--border-radius);
+  }
+  .questions__icon {
+    width: 32px;
+    height: 24px;
+  }
+}
+
+@media(min-width: 775px) {
+  .tokenomics__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .tokenomics__wrapper {
+    width: calc(50% - 5px);
+  }
+
+  .tokenomics__item {
+    width: 100%;
+  }
+  .tokenomics__item-inner {
+    width: clamp(150px, 19.354vw, 180px);
+  }
+  .tokenomics__item-wide {
+    height: 53px;
+  }
+  .tokenomics__code {
+    max-width: 100%;
+    width: auto;
+  }
+  .tokenomics__code-inner {
+    width: auto;
+  }
+
+  .start__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 627px;
+    row-gap: 40px;
+  }
+  .start__title {
+    margin-bottom: 0;
+    order: 0;
+  }
+  .start__wrapper {
+    row-gap: 30px;
+  }
+
+  .start__paragraph {
+    max-width: clamp(275px, calc(100vw - 375px - 25px - (2 * clamp(50px, 8.06vw, 100px))), 360px); /* длина страницы - длина картинки - отступ - отступ конктейнера*/
+  }
+  .start__gradient {
+    width: 375px;
+    height: 320px;
+    margin-top: 81px;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 871px) {
+  .computing__info {
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .computing__description {
+    text-align: left;
+    max-width: 405px;
+  }
+  .computing__stats {
+    align-self: start;
+    margin-top: 43px;
+  }
+  .computing__image {
+    display: block;
+    width: 308px;
+    height: 255px;
+  }
+}
+
+@media (min-width: 960px) {
+  .header__container,
+  .computing__container,
+  .choose__container,
+  .roadmap__container,
+  .tokenomics__container,
+  .start__container,
+  .stop__container,
+  .form__container,
+  .questions__container,
+  .footer__container {
+    width: calc(100vw - 2 * 100px);
+  }
+  .title__medium {
+    font-size: 3.4rem;
+    margin-bottom: 40px;
+  }
+  .title__small {
+    font-size: 2.2rem;
+  }
+    
+  .text__large {
+    font-size: 1.8rem;
+  }
+  .text__regular {
+    font-size: 1.4rem;
+  }
+  .text__small {
+    font-size: 1.2rem;
+  }
+  
+  .main__choose,
+  .main__roadmap,
+  .main__tokenomics,
+  .tokenomics__container,
+  .main__start,
+  .main__stop,
+  .main__form,
+  .main__questions,
+  .footer {
+    margin-top: 120px;
+  }
+
+  .header__nav {
+    height: 45px;
+    display: flex;
+    column-gap: 4.75rem;
+    padding-inline: 20px;
+  }
+  .header__logo {
+    width: 126px;
+    height: 20px;
+  }
+  .header__nav-hidden {
+    visibility: visible;
+  }
+  .header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    align-items: center;
+  }
+  .header__item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 1.4rem;
+  }
+  .item__inner {
+    font-size: 1.4rem;
+  }
+  .header__button {
+    width: 145px;
+    height: 45px;
+  }
+  .header__burger {
+    display: none;
+  }
+
+  .main__computing {
+    margin-top: 95px;
+  }
+
+  .computing__title {
+    font-size: clamp(4.2rem, 4.37vw, 5.2rem);
+    max-width: clamp(405px, 42.18vw, 495px);
+  }
+  .computing__circle::after {
+    width: clamp(67px, 6.97vw, 77px);
+    height: clamp(67px, 6.97vw, 77px);
+    left: clamp(340px, 35.416vw, 420px);
+    bottom: 2px;
+  }
+  .computing__description {
+    max-width: clamp(405px, 42.18vw, 495px);
+  }
+  .computing__buttons {
+    column-gap: clamp(15px, 1.56vw, 20px);
+    margin-top: 20px;
+  }
+  .computing__button {
+    width: clamp(149px, 15.52vw, 270px);
+    height: clamp(50px, 5.2vw, 70px);
+    padding-inline: clamp(20px, 2.08vw, 30px);
+  }
+
+  .computing__stats {
+    column-gap: 50px;
+  }
+  .computing__avg {
+    row-gap: 15px;
+  }
+  .computing__subtitle {
+    font-size: 2rem;
+  }
+  .computing__text {
+    font-size: 1.2rem;
+  }
+  .computing__image {
+    width: clamp(308px, 32.08vw, 410px);
+    height: clamp(255px, 25.56vw, 350px);
+  }
+
+  .choose__body {
+    padding-top: 30px;
+    padding-left: 30px;
+    height: clamp(220px, 22.91vw, 260px);
+  }
+  .choose__text {
+    font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+  }
+  
+  .roadmap__items {
+    gap: 3rem;
+  }
+  .roadmap__body {
+    max-width: clamp(167px, 17.39vw, 220px);
+  }
+  .roadmap__circle {
+    font-size: clamp(2.2rem, 2.29vw, 4.2rem);
+    width: clamp(60px, 6.25vw, 100px);
+    height: clamp(60px, 6.25vw, 100px);
+  }
+  .roadmap__text {
+    font-size: clamp(1.4rem, 1.45vw, 1.6rem);
+  }
+  .roadmap__image {
+    padding-top: 5px;
+    width: 20px;
+    height: 10px;
+  }
+
+  .tokenomics__text {
+    width: 128.125vw;;
+    margin-block: 120px;
+  }
+  .tokenomics__info {
+    gap: clamp(10px, 1.04vw, 20px);
+  }
+  .tokenomics__wrapper {
+    width: calc(50% - clamp(5px, 0.52vw, 10px));
+    row-gap: clamp(10px, 1.04vw, 20px);
+  }
+  .tokenomics__item {
+    height: clamp(53px, 5.52vw, 74px);
+  }
+  .tokenomics__item-inner {
+    width: clamp(182px, 18.95vw, 237px);
+  }
+
+
+  .start__title {
+    margin-bottom: 10px;
+  }
+  .start__button {
+    width: clamp(247px, 25.72vw, 320px);
+    height: clamp(65px, 6.77vw, 80px);
+  }
+  .start__gradient {
+    width: clamp(375px, 39.06vw, 496px);
+    height: clamp(320px, 33.33vw, 383px);
+    margin-top: 81px;
+  }
+  .start__image {
+    width: clamp(230px, 23.95vw, 300px);
+    height: clamp(200px, 20.83vw, 257px);
+  }
+  .start__paragraph {
+    max-width: clamp(360px, 37.5vw, 490px);
+  }
+
+  .form__input {
+    height: clamp(50px, 5.20vw, 71px);
+  }
+  .form__input-big {
+    height: 110px;
+  }
+  .form__button {
+    height: clamp(54px, 5.625vw, 80px);
+  }
+
+  .questions__title {
+    margin-bottom: 0;
+    align-self: flex-start;
+  }
+  .questions__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 14px;
+    max-height: clamp(305px, 31.77vw, 390px);
+  }
+  .questions__text {
+    display: block;
+    max-width: clamp(246px, 25.625vw, 320px);
+  }
+  .questions__button {
+    width: clamp(246px, 25.52vw, 289px);
+  }
+  .questions__item {
+    width: clamp(500px, 52.083vw, 660px);
+  }
+  .questions__item:not(:last-child) {
+    margin-bottom: clamp(10px, 1.04vw, 30px);
+  }
+  .questions__button {
+    order: 0;
+  }
+  .footer__container {
+    row-gap: 15px;
+  }
+  .footer__nav {
+    flex-direction: row;
+  }
+  .footer__image {
+    width: 107px;
+    height: 17px;
+  }
+  .footer__list {
+    flex-direction: row;
+  }
+  .footer__copyright {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1100px) {
+  .choose__table {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 20px;
+    min-height: auto;
+    max-height: none;
+  }
+  .choose__body {
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .title__medium {
+    font-size: 4.2rem;
+    margin-bottom: 60px;
+  }
+  .title__small {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  
+  .text__large {
+    font-size: 2rem;
+  }
+  .text__regular {
+    font-size: 1.6rem;
+  }
+  .text__small {
+    font-size: 1.4rem;
+  }
+
+  .main__choose,
+  .main__roadmap,
+  .main__tokenomics,
+  .tokenomics__container,
+  .main__start,
+  .main__form,
+  .main__questions,
+  .footer {
+    margin-top: 150px;
+  }
+
+  .header__nav {
+    max-width: 530px;
+    padding-inline: 20px 40px;
+    column-gap: 45px;
+    height: 45px;
+  }
+  .header__logo {
+    width: 126px;
+    height: 20px;
+  }
+  .header__list {
+    column-gap: 35px;
+  }
+  .header__button {
+    font-size: 2rem;
+    width: 145px;
+    height: 45px;
+  }
+  
+  .main__computing {
+    margin-top: 95px;
+  }
+  .computing__title {
+    font-size: clamp(5.2rem, 4.33vw, 9rem);
+    max-width: clamp(495px, 41.25vw, 854px);
+  }
+  .computing__circle::after {
+    width: clamp(77px, 6.97vw, 134px);
+    height: clamp(77px, 6.97vw, 134px);
+    left: clamp(420px, 35vw, 670px);
+    bottom: 0px;
+  }
+  .computing__description {
+    max-width: clamp(495px, 41.25vw, 626px);
+  }
+  .computing__buttons {
+    margin-top: 35px;
+    column-gap: 20px;
+  }
+  .computing__button {
+    width: 270px;
+    height: 70px;
+    border-radius: var(--border-radius);
+  }
+  .computing__arrow {
+    width: 15px;
+    height: 15px;
+  }
+  .computing__dollar {
+    width: 13px;
+    height: 28px;
+  }
+  .computing__avg {
+    row-gap: 3px;
+  }
+  .computing__subtitle {
+    font-size: 2.4rem;
+  }
+  .computing__text {
+    font-size: 1.6rem;
+  }
+  .computing__image {
+    width: clamp(410px, 34.16vw, 757px);
+    height: clamp(350px, 29.16vw, 651px);
+  }
+
+  .choose__headline {
+    column-gap: 32px;
+  }
+  .choose__image {
+    width: 52px;
+    height: 55px;
+  }
+  .choose__text {
+    max-width: clamp(335px, 27.91vw, 471px);
+  }
+  .choose__text-color {
+    max-width: clamp(335px, 27.91vw, 444px);
+  }
+
+  .roadmap__items {
+    gap: 4rem;
+  }
+  .roadmap__body {
+    row-gap: 40px;
+    max-width: clamp(220px, 18.33vw, 335px);
+  }
+  .roadmap__circle {
+    width: clamp(100px, 8.33vw, 125px);
+    height: clamp(100px, 8.33vw, 125px);
+    font-size: clamp(4.2rem, 3.5vw, 5rem);
+  }
+
+  .tokenomics__text {
+    width: 145vw;
+    height: 54px;
+    font-weight: 400;
+    margin-block: 150px;
+    font-size: 2rem;
+  }
+  .tokenomics__info {
+    gap: 20px;
+  }
+  .tokenomics__wrapper {
+    width: calc(50% - 10px);
+    row-gap: 20px;
+  }
+  .tokenomics__item {
+    height: 74px;
+    padding-left: 30px;
+  }
+  .tokenomics__item-inner {
+    width: 237px;
+    padding-right: 30px;
+  }
+
+
+  .start__container {
+    width: calc(100vw - 2 * 100px + 6px);
+    row-gap: 60px;
+    column-gap: 19px;
+    max-height: 658px;
+  }
+  .start__title {
+    margin-bottom: 0;
+  }
+  .start__paragraph {
+    max-width: clamp(490px, 40.83vw, 594px);
+    white-space: pre-line;
+  }
+  .start__button {
+    width: 320px;
+  }
+  .start__gradient {
+    width: clamp(496px, 41.33vw, 940px);
+    height: clamp(383px, 31.91vw, 620px);
+    margin-top: 100px;
+  }
+  .start__image {
+    width: clamp(300px, 25vw, 600px);
+    height: clamp(257px,  21.416vw, 520px);
+  }
+  
+  .form__input {
+    height: 71px;
+  }
+  .form__input-big {
+    height: 141px;
+    padding-block: 30px;
+  }
+  .form__button {
+    height: 80px;
+  }
+  
+  .questions__container {
+    max-height: 390px;
+  }
+  .questions__title {
+    margin-bottom: 0;
+  }
+  .questions__item {
+    width: clamp(660px, 55vw, 950px);
+    height: clamp(54px, 4.58vw, 80px);
+  }
+  .questions__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .footer__container {
+    row-gap: 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+ .start__paragraph {
+  white-space: normal;
+  font-size: clamp(1.6rem, 1.14vw, 1.8rem);
+ }
+}
+
+@media (min-width: 1920px) {
+  .header__container,
+  .computing__container,
+  .choose__container,
+  .roadmap__container,
+  .start__container,
+  .stop__container,
+  .questions__container,
+  .footer__container {
+    max-width: 1720px;
+  }
+  
+  .title__medium {
+    font-size: 6.4rem;
+    margin-bottom: 80px;
+  }
+  .title__small {
+    font-size: 3.2rem;
+  }
+  
+  .text__large {
+    font-size: 2.4rem;
+  }
+  .text__regular {
+    font-size: 1.8rem;
+  }
+  .text__small {
+    font-size: 1.6rem;
+  }
+
+  .main__choose,
+  .main__roadmap,
+  .main__tokenomics,
+  .tokenomics__container,
+  .main__start,
+  .main__form,
+  .main__questions,
+  .footer {
+    margin-top: 200px;
+  }
+
+  .header__nav {
+    max-width: 687px;
+    height: 60px;
+    column-gap: 65px;
+    padding-inline: 30px;
+  }
+  .header__logo {
+    width: 180px;
+    height: 28px;
+  }
+  .header__list {
+    column-gap: 55px;
+  }
+  .header__button {
+    width: 210px;
+    height: 60px;
+    border-radius: var(--border-radius);
+  }
+
+  .computing__title {
+    font-size: 9rem;
+    max-width: 854px;
+  }
+  .computing__circle::after {
+    width: 134px;
+    height: 134px;
+    left: 718px;
+  }
+  .computing__description {
+    max-width: 626px;
+    margin-top: 35px;
+    white-space: pre-line;
+    text-wrap: nowrap;
+  }
+  .computing__buttons {
+    margin-top: 75px;
+  }
+  .computing__stats {
+    margin-top: 180px;  
+  }
+  .computing__image {
+    width: 757px;
+    height: 651px;
+  }
+
+  .choose__body {
+    height: 300px;
+    padding-left: 60px;
+  }
+  .choose__headline {
+    margin-bottom: 65px;
+  }
+  .choose__image {
+    width: 52px;
+    height: 55px;
+  }
+  .choose__text {
+    max-width: 471px;
+  }
+  .choose__text-color {
+    max-width: 444px;
+  }
+
+  .roadmap__body {
+    max-width: 335px;
+  }
+  .roadmap__circle {
+    width: 125px;
+    height: 125px;
+    font-size: 50px;
+  }
+
+  .tokenomics__text {
+    width: 127.6vw;
+    font-size: 3.6rem;
+    height: 100px;
+    margin-block: 150px;
+  }
+  .tokenomics__item {
+    height: 77px;
+  }
+
+  .start__container {
+    max-height: 675px;
+    justify-content: space-between;
+    row-gap: 50px;
+  }
+  .start__title {
+    margin-bottom: 0;
+  }
+  .start__wrapper {
+    row-gap: 70px;
+  }
+  .start__text {
+    row-gap: 25px;
+  }
+  .start__paragraph-transferable {
+    white-space: pre-line;
+  }
+  .start__button {
+    width: 350px;
+  }
+  .start__gradient {
+    margin-top: 0;
+    width: 940px;
+    height: 620px;
+  }
+  .start__image {
+    width: 600px;
+    height: 520px;
+  }
+
+  .form__input {
+    height: 73px;
+  }
+  .form__input-big {
+    height: 143px;
+  }
+
+  .questions__container {
+    row-gap: 60px;
+    max-height: 640px;
+  }
+  .questions__title {
+    margin-bottom: 0;
+  }
+  .questions__text {
+    max-width: 370px;
+  }
+  .questions__button {
+    width: 332px;
+    height: 75px;
+  }
+  .questions__item {
+    width: 950px;
+    height: 80px;
+  }
+  .questions__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .footer__image {
+    width: 180px;
+    height: 28px;
+  }
+  .footer__list {
+    column-gap: 55px;
+  }
+  .footer__law {
+    font-size: 1.6rem;
+  }
+}
